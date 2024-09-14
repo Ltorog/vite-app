@@ -4,7 +4,7 @@ let socket: Socket
 
 export const connectToServer = (jwtToken: string) => {
 
-    const manager = new Manager('localhost:3557/socket.io/socket.io.js', {
+    const manager = new Manager(import.meta.env.HOST_URL, {
         extraHeaders: {
             hola: 'mundo',
             authentication: jwtToken
