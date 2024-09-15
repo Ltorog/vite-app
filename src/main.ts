@@ -1,6 +1,5 @@
 import './style.css'
 import { connectToServer, } from './socket-client';
-import { Socket } from 'socket.io-client';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
